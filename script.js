@@ -133,7 +133,8 @@ function countNeighbors(x, y) {
 function gameOfLifeLoop() {
     updateGrid();
     drawGrid();
-    requestAnimationFrame(gameOfLifeLoop);
+    // Slowing down the Game of Life frames by increasing the delay between frames
+    setTimeout(() => requestAnimationFrame(gameOfLifeLoop), 100); // 100ms delay between frames
 }
 
 // Initialize and start the Game of Life
