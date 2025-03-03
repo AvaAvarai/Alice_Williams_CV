@@ -31,7 +31,7 @@ let angle = 0;
 const rainbowButton = document.getElementById('rainbow-mode');
 rainbowButton.addEventListener('click', () => {
     rainbowMode = !rainbowMode;
-    rainbowButton.textContent = rainbowMode ? 'Normal Mode' : 'Rainbow Mode';
+    rainbowButton.textContent = rainbowMode ? 'Normal Animation Mode' : 'Rainbow Animation Mode';
 });
 
 const draw = () => {
